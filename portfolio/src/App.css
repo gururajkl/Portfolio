@@ -307,7 +307,7 @@ footer {
   place-items: center;
   padding: 42px 7vw;
   color: var(--muted);
-  font-size: 13px;
+  font-size: 15px;
 }
 .footer-credit {
   display: flex;
