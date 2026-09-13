@@ -1,0 +1,7 @@
+I want to create a modern portfolio with clean animations for my profile.
+The portfolio should contain information about me like what am doing right now and what is my current tech stack and my education details and projects which i worked on.
+I will also give you my latest resume so that you can corelate.
+I can also give you my linkedin profile so that you can check that for me: in/gururaj-kl-33363b188
+I also need to have contact page where externals can contact me, use snmp for mailing here.
+I also need to have a button which says download resume, clicking on that latest resume will be downloaded.
+I need to use react to build my portfolio.
