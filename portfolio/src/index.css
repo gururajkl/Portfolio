@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+:root { --ink:#f3f5ef; --muted:#98a19b; --paper:#090b0a; --surface:#121714; --surface-raised:#18201c; --line:#2c3631; --accent:#b7f34a; --accent-warm:#ff765e; --forest:#0d110f; --sans:'Space Grotesk',sans-serif; --display:'Space Grotesk',sans-serif; --mono:'IBM Plex Mono',monospace; color-scheme:dark; font:16px/1.6 var(--sans); letter-spacing:0; color:var(--ink); background:var(--paper); font-synthesis:none; text-rendering:optimizeLegibility; }
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; scroll-padding-top:72px; }
+body { margin:0; min-width:320px; min-height:100vh; background:var(--paper); }
+button,input,textarea { font:inherit; }
+a { color:inherit; }
+:focus-visible { outline:3px solid var(--accent); outline-offset:4px; }
+::selection { color:var(--paper); background:var(--accent); }
+@media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } *,*::before,*::after { animation-duration:.01ms!important; animation-iteration-count:1!important; transition-duration:.01ms!important; } }

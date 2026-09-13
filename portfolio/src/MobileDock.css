@@ -1,0 +1,108 @@
+.mobile-dock {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  #about,
+  #stack,
+  #education,
+  #projects,
+  #contact {
+    scroll-margin-top: 96px;
+  }
+
+  .site-header {
+    grid-template-columns: 1fr auto;
+  }
+
+  .site-header .navigation {
+    display: none;
+  }
+
+  .site-header .header-resume {
+    display: grid;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    place-items: center;
+  }
+
+  .header-resume span {
+    display: none;
+  }
+
+  .mobile-dock {
+    position: fixed;
+    z-index: 30;
+    right: 12px;
+    bottom: max(12px, env(safe-area-inset-bottom));
+    left: 12px;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    min-height: 66px;
+    padding: 6px;
+    border: 1px solid rgba(183, 243, 74, 0.25);
+    border-radius: 6px;
+    background: rgba(13, 17, 15, 0.96);
+    box-shadow: 0 14px 36px rgba(0, 0, 0, 0.48);
+    backdrop-filter: blur(16px);
+  }
+
+  .mobile-dock a {
+    position: relative;
+    display: flex;
+    min-width: 0;
+    min-height: 52px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4px;
+    color: var(--muted);
+    font-family: var(--mono);
+    font-size: 9px;
+    line-height: 1;
+    text-decoration: none;
+    transition: color 180ms ease, transform 420ms cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+
+  .mobile-dock a::before {
+    position: absolute;
+    top: -6px;
+    width: 24px;
+    height: 2px;
+    background: var(--accent);
+    content: '';
+    opacity: 0;
+    transform: scaleX(0);
+    transition: opacity 180ms ease, transform 420ms cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+
+  .mobile-dock a.active {
+    color: var(--accent);
+    transform: translateY(-3px);
+  }
+
+  .mobile-dock a.active::before {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+
+  .mobile-dock a:active {
+    transform: translateY(1px);
+  }
+
+  footer {
+    padding-bottom: 104px;
+  }
+}
+
+@media (max-width: 380px) {
+  .mobile-dock {
+    right: 6px;
+    left: 6px;
+  }
+
+  .mobile-dock a {
+    font-size: 8px;
+  }
+}
