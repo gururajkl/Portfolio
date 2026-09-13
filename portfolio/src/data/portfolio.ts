@@ -32,13 +32,13 @@ export const education: Education[] = [
   {
     qualification: 'BE in Computer Science and Engineering',
     institution: 'Sri Rajarajeswari College of Engineering',
-    period: '2018 — 2022',
+    period: '2018 - 2022',
     detail: 'Graduated with an 8.58 CGPA.',
   },
   {
-    qualification: 'PUC — PCMCs',
+    qualification: 'PUC - PCMCs',
     institution: 'Sree Lakshmi PU College',
-    period: '2017 — 2018',
+    period: '2017 - 2018',
     detail: 'Completed with 91%.',
   },
 ]
@@ -47,7 +47,7 @@ export const projects: Project[] = [
   {
     title: 'Olympus',
     organization: 'Siemens Healthineers · Senior Software Engineer',
-    period: 'Jul 2026 — Present',
+    period: 'Jul 2026 - Present',
     description:
       'An inventory management application supporting Radiopharma business operations in a healthcare software environment.',
     contribution:
@@ -57,7 +57,7 @@ export const projects: Project[] = [
   {
     title: 'Honeywell PrintSet 6',
     organization: 'Sasken Technologies Limited · Full Stack .NET Developer',
-    period: 'Apr 2024 — Jul 2026',
+    period: 'Apr 2024 - Jul 2026',
     description:
       'Greenfield printer configuration and management software for Honeywell printers, spanning desktop and cross-platform application development.',
     contribution:
@@ -67,7 +67,7 @@ export const projects: Project[] = [
   {
     title: 'Kontron AFC',
     organization: 'Sasken Technologies Limited',
-    period: 'Jan 2024 — Apr 2024',
+    period: 'Jan 2024 - Apr 2024',
     description:
       'A contactless smart-card fare collection platform for public transport, covering products, sales, passenger accounts, releases, validators, and automatic vending machines.',
     contribution:
@@ -77,7 +77,7 @@ export const projects: Project[] = [
   {
     title: 'Track Machine Connected Smart ALC',
     organization: 'Sasken Technologies Limited · Full Stack .NET Developer',
-    period: 'Aug 2022 — Dec 2023',
+    period: 'Aug 2022 - Dec 2023',
     description:
       'A connected track-machine application built to support Smart ALC workflows through a responsive desktop experience and distributed backend services.',
     contribution:
