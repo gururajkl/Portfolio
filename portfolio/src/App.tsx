@@ -151,7 +151,9 @@ function App() {
           <ul className="social-links" aria-label="Social profiles">{socialLinks.map((link) => <li key={link.platform}><a href={link.href} target="_blank" rel="noreferrer"><span><strong>{link.platform}</strong><small>{link.handle}</small></span><ArrowUpRight aria-hidden="true" /></a></li>)}</ul>
         </motion.section>
       </main>
-      <footer><p>© {new Date().getFullYear()} {profile.name}</p><a href="#home" onClick={(event) => scrollToSection(event, 'home')}>Back to top <ArrowDown className="back-arrow" size={17} /></a></footer>
+      <footer>
+        <p className="footer-credit">Built with <Code2 size={15} aria-hidden="true" /> &amp; care by <a href="#home" onClick={(event) => scrollToSection(event, 'home')}>{profile.name}</a></p>
+      </footer>
     </div>
   )
 }

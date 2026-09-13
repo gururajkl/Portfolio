@@ -303,22 +303,32 @@ h1 {
   color: #bdc8c1;
 }
 footer {
-  display: flex;
-  justify-content: space-between;
-  padding: 28px 7vw;
+  display: grid;
+  place-items: center;
+  padding: 42px 7vw;
   color: var(--muted);
   font-size: 13px;
 }
-footer p {
-  margin: 0;
-}
-footer a {
+.footer-credit {
   display: flex;
   align-items: center;
-  gap: 7px;
+  gap: 6px;
+  margin: 0;
+  color: var(--muted);
 }
-.back-arrow {
-  transform: rotate(180deg);
+.footer-credit svg {
+  color: var(--accent-warm);
+}
+.footer-credit a {
+  color: var(--ink);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 180ms ease, filter 180ms ease;
+}
+.footer-credit a:hover,
+.footer-credit a:focus-visible {
+  color: var(--accent);
+  filter: drop-shadow(0 0 9px rgba(183,243,74,.85));
 }
 @media (max-width: 900px) {
   .site-header {
